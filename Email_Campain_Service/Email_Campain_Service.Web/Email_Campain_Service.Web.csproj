@@ -15,4 +15,9 @@
     <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <ProjectReference Include="..\Email_Campain_Service.Core\Email_Campain_Service.Core.csproj" />
+  </ItemGroup>
+
 </Project>

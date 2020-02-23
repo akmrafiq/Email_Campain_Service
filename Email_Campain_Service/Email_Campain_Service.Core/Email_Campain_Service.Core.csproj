@@ -11,12 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Contexts\" />
-    <Folder Include="Services\" />
-    <Folder Include="UnitOfWorks\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Email_Campain_Service.Data\Email_Campain_Service.Data.csproj" />
   </ItemGroup>
 
