@@ -33,6 +33,6 @@ namespace Email_Campain_Service.Core.Contexts
             base.OnModelCreating(builder);
         }
         public DbSet<Customer> Customers { get; set ; }
-        public DbSet<Event> Events { get; set; }
+        public DbSet<CampaignEvent> Events { get; set; }
     }
 }

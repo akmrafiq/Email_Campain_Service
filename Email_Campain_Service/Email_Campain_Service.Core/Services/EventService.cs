@@ -14,11 +14,11 @@ namespace Email_Campain_Service.Core.Services
         {
             _campignUnitOfWork = campignUnitOfWork;
         }
-        public void AddEvent(Event @event)
+        public void AddEvent(CampaignEvent campaignEvent)
         {
-            if (@event == null || string.IsNullOrWhiteSpace(@event.CampaignName) || string.IsNullOrWhiteSpace(@event.CampaignDate))
+            if (campaignEvent == null || string.IsNullOrWhiteSpace(campaignEvent.CampaignName))
                 throw new InvalidOperationException("Incomplete information");
-            _campignUnitOfWork.EventRepository.Add(@event);
+            _campignUnitOfWork.EventRepository.Add(campaignEvent);
             _campignUnitOfWork.Save();
         }
     }

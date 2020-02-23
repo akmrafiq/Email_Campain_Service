@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Email_Campain_Service.Core.Repositories
 {
-    public interface IEventRepository : IRepository<Event>
+    public interface IEventRepository : IRepository<CampaignEvent>
     {
 
     }

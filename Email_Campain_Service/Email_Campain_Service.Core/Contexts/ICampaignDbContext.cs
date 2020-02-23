@@ -9,6 +9,6 @@ namespace Email_Campain_Service.Core.Contexts
     public interface ICampaignDbContext
     {
         DbSet<Customer> Customers { get; set; }
-        DbSet<Event> Events { get; set; }
+        DbSet<CampaignEvent> Events { get; set; }
     }
 }

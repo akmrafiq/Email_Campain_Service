@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Email_Campain_Service.Core.Entities
 {
-    public class Event   
+    public class CampaignEvent   
     {
         public int Id { get; set; }
         [Required(ErrorMessage = "Please Enter Campaign Naame")]

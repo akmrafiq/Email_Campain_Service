@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Email_Campain_Service.Core.Repositories
 {
-    public class EventRepository : Repository<Event>, IEventRepository
+    public class EventRepository : Repository<CampaignEvent>, IEventRepository
     {
         public EventRepository(DbContext dbContext)
             : base(dbContext)

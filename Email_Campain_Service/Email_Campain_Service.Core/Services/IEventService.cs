@@ -7,6 +7,6 @@ namespace Email_Campain_Service.Core.Services
 {
     interface IEventService
     {
-        void AddEvent(Event @event);
+        void AddEvent(CampaignEvent campaignEvent);
     }
 }
