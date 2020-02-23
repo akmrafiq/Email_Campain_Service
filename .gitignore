@@ -3,3 +3,6 @@
 ################################################################################
 
 /Email_Campain_Service/Email_Campain_Service.Data/obj
+/Email_Campain_Service/Email_Campain_Service.Core/obj
+/Email_Campain_Service/.vs/Email_Campain_Service
+/Email_Campain_Service/Email_Campain_Service.Web/obj
