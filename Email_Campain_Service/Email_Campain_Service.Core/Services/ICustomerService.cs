@@ -6,7 +6,7 @@ using System.Text;
 namespace Email_Campain_Service.Core.Services
 {
     public interface ICustomerService
-    {
+    {   
       
         void AddCustomer(Customer customer);
         
