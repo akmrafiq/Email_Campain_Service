@@ -6,11 +6,11 @@ using System.Text;
 
 namespace Email_Campain_Service.Core.Services
 {
-    public class EventService : IEventService
+    public class CampaignEventService : ICampaignEventService
     {
         private ICampignUnitOfWork _campignUnitOfWork;
 
-        public EventService(ICampignUnitOfWork campignUnitOfWork)
+        public CampaignEventService(ICampignUnitOfWork campignUnitOfWork)
         {
             _campignUnitOfWork = campignUnitOfWork;
         }
@@ -20,6 +20,10 @@ namespace Email_Campain_Service.Core.Services
                 throw new InvalidOperationException("Incomplete information");
             _campignUnitOfWork.EventRepository.Add(campaignEvent);
             _campignUnitOfWork.Save();
+        }
+        public IEnumerable<CampaignEvent> GetAllEvents()
+        {
+            return _campignUnitOfWork.EventRepository.GetAllItem();
         }
     }
 }

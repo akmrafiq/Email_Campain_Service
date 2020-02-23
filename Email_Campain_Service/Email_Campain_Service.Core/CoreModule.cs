@@ -45,7 +45,7 @@ namespace Email_Campain_Service.Core
               .InstancePerLifetimeScope();
             builder.RegisterType<EventRepository>().As<IEventRepository>()
                 .InstancePerLifetimeScope();
-            builder.RegisterType<EventService>().As<EventService>()
+            builder.RegisterType<CampaignEventService>().As<ICampaignEventService>()
               .InstancePerLifetimeScope();
 
             base.Load(builder);
